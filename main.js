@@ -54,9 +54,6 @@ var sbfade=valuehide;sbfade.opacity=0;
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
-else if (dstText == "yt") {
-window.open("https://www.m.youtube.com");
-    }
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://youtube.com');
@@ -65,10 +62,19 @@ else if (dstText == "facebook") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://facebook.com');
   }
-else if (dstText == "google") {
+else if (dstText == "instagram") {
+  window.open("https://instagram.com");
+}
+else if (dstText == "fb") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://google.com');
+    window.location.replace('https://facebook.com');
   }
+else if (dstText == "yt") {
+  window.open("https://youtube.com");
+}
+else if (dstText == "ig") {
+  window.open("https://instagram.com");
+}
  else if(dstText.replace(/\s/g,"") == ""){
    alert("Fill-Token-Correctly");
  }
