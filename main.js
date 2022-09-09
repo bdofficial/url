@@ -1,5 +1,5 @@
 window.onload = function() {
-Verify()
+
 };
 //check if "dstText" is in localStorage
 if (localStorage["dstText"])
@@ -53,6 +53,10 @@ var sbfade=valuehide;sbfade.opacity=0;
   else if (dstText == "1436") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
+  }
+else if (dstText == "yt") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.document.location.assign('https://youtube.com');
   }
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
