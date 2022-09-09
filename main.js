@@ -29,7 +29,7 @@ const valuehide=document.getElementById('products').style;
 function Verify() {
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
-var sbfade=valuehide;sbfade.opacity=0;
+ var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
   else if (dstText == "bdop") {
@@ -54,6 +54,11 @@ var sbfade=valuehide;sbfade.opacity=0;
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
+////////////////////
+else if (dstText == "google") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://google.com');
+  }
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://youtube.com');
@@ -63,23 +68,46 @@ else if (dstText == "facebook") {
     window.location.replace('https://facebook.com');
   }
 else if (dstText == "instagram") {
+  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
 }
 else if (dstText == "tiktok") {
+  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
+}
+else if (dstText == "twitter") {
+  var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://twitter.com");
+}
+////////////////////
+else if (dstText == "go") {
+  var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://google.com");
+}
+else if (dstText == "gg") {
+  var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://google.com");
+}
+else if (dstText == "yt") {
+  var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://youtube.com");
 }
 else if (dstText == "fb") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://facebook.com');
-  }
-else if (dstText == "yt") {
-  window.open("https://youtube.com");
+  sbfade.opacity = 0;
+  window.location.replace('https://facebook.com');
 }
 else if (dstText == "ig") {
+  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
 }
 else if (dstText == "tt") {
+  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://tiktok.com");
+}
+else if (dstText == "tw") {
+  var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://twitter.com");
 }
  else if(dstText.replace(/\s/g,"") == ""){
    alert("Fill-Token-Correctly");
@@ -92,6 +120,7 @@ else if (dstText.includes('http')) {
   //////////////////
   //////////////////
 else {
+ var sbfade=valuehide;sbfade.opacity=0;
  var sel = document.getElementById('dstText').value;
  window.location.replace('http://'+sel);
   }
