@@ -1,5 +1,5 @@
 window.onload = function() {
-
+Verify()
 };
 //check if "dstText" is in localStorage
 if (localStorage["dstText"])
