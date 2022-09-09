@@ -79,7 +79,7 @@ else if (dstText == "ig") {
   window.open("https://instagram.com");
 }
 else if (dstText == "tt") {
-  window.open("https://instagram.com");
+  window.open("https://tiktok.com");
 }
  else if(dstText.replace(/\s/g,"") == ""){
    alert("Fill-Token-Correctly");
