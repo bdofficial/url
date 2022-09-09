@@ -65,6 +65,9 @@ else if (dstText == "facebook") {
 else if (dstText == "instagram") {
   window.open("https://instagram.com");
 }
+else if (dstText == "tiktok") {
+  window.open("https://instagram.com");
+}
 else if (dstText == "fb") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://facebook.com');
@@ -73,6 +76,9 @@ else if (dstText == "yt") {
   window.open("https://youtube.com");
 }
 else if (dstText == "ig") {
+  window.open("https://instagram.com");
+}
+else if (dstText == "tt") {
   window.open("https://instagram.com");
 }
  else if(dstText.replace(/\s/g,"") == ""){
