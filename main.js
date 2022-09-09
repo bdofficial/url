@@ -65,8 +65,7 @@ else if (dstText.includes('http')) {
   //////////////////
   //////////////////
 else {
- var sel = document.getElementById('dstText').value;
- window.location.replace(sel);
+ alert("Fill-Token-Correctly");
   }
 }; 
 /////////////////
