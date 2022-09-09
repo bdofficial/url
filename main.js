@@ -56,7 +56,7 @@ var sbfade=valuehide;sbfade.opacity=0;
   }
 else if (dstText == "yt") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.document.location.assign('https://youtube.com');
+    window.document.location.assign('https://m.youtube.com');
   }
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
