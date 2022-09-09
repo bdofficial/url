@@ -55,8 +55,7 @@ var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
 else if (dstText == "yt") {
-  var sbfade=valuehide;sbfade.opacity=0;
-    window.document.location.assign('https://m.youtube.com');
+  window.open('https://youtube.com','_system'); 
   }
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
