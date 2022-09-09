@@ -39,7 +39,7 @@ function Verify() {
   //////////////////
 else if (dstText == "f") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://codepen.io/adamrifai/pen/YLxjKa');
+    window.location.replace('f.html');
   }
   //////////////////
   //////////////////
