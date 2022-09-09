@@ -124,12 +124,17 @@ else if (dstText.includes('http')) {
   var sel = document.getElementById('dstText').value;
   window.location.replace(sel);
  }
+ else if (dstText.includes('.')) {
+ var sbfade=valuehide;sbfade.opacity=0;
+  var sel = document.getElementById('dstText').value;
+  window.location.replace('http://' + sel);
+ }
   //////////////////
   //////////////////
 else {
  var sbfade=valuehide;sbfade.opacity=0;
  var sel = document.getElementById('dstText').value;
- window.location.replace('http://'+sel);
+ window.location.replace('https://www.google.com/search?sitesearch=&q='+sel);
   }
 }; 
 /////////////////
