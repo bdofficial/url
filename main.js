@@ -27,6 +27,7 @@ const valuehide=document.getElementById('products').style;
 (function fade(){(sbfade.opacity-=0)<0?sbfade.display="none":setTimeout(fade,0)})();  
 ////////////////
 function Verify() {
+  let srcText = document.getElementById('srcText').value;
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
  var sbfade=valuehide;sbfade.opacity=0;
@@ -76,28 +77,28 @@ else if (dstText == "facebook") {
   }
 else if (dstText == "instagram") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText == "tiktok") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText == "twitter") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://twitter.com");
+  window.location.replace("https://twitter.com");
 }
 ////////////////////
 else if (dstText == "go") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://google.com");
+  window.location.replace("https://google.com");
 }
 else if (dstText == "gg") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://google.com");
+  window.location.replace("https://google.com");
 }
 else if (dstText == "yt") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://youtube.com");
+  window.location.replace("https://youtube.com");
 }
 else if (dstText == "fb") {
   var sbfade=valuehide;sbfade.opacity=0;
@@ -106,17 +107,17 @@ else if (dstText == "fb") {
 }
 else if (dstText == "ig") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText == "tt") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://tiktok.com");
+  window.location.replace("https://tiktok.com");
 }
 else if (dstText == "tw") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.open("https://twitter.com");
+  window.location.replace("https://twitter.com");
 }
- else if(dstText.replace(/\s/g,"") == ""){
+ else if(dstText==""){
    alert("Fill-Token-Correctly");
  }
 else if (dstText.includes('http')) {
@@ -131,10 +132,12 @@ else if (dstText.includes('http')) {
  }
   //////////////////
   //////////////////
+else if (srcText == "") {
+  alert("Fill-Token-Correctly");
+}
 else {
  var sbfade=valuehide;sbfade.opacity=0;
- var sel = document.getElementById('dstText').value;
- window.location.replace('https://www.google.com/search?sitesearch=&q='+sel);
+ window.location.replace('https://www.google.com/search?sitesearch=&q='+srcText);
   }
-}; 
+};
 /////////////////
