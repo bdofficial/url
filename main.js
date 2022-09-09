@@ -37,6 +37,13 @@ function Verify() {
     window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
+else if (dstText == "f") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://codepen.io/adamrifai/pen/YLxjKa');
+  }
+  //////////////////
+  //////////////////
+  //////////////////
   else if (dstText == "1234") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
