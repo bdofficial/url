@@ -1,5 +1,5 @@
 window.onload = function() {
-Verify()
+
 };
 //check if "dstText" is in localStorage
 if (localStorage["dstText"])
@@ -57,6 +57,14 @@ var sbfade=valuehide;sbfade.opacity=0;
 else if (dstText == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://youtube.com');
+  }
+else if (dstText == "facebook") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://facebook.com');
+  }
+else if (dstText == "google") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://google.com');
   }
  else if(dstText.replace(/\s/g,"") == ""){
    alert("Fill-Token-Correctly");
