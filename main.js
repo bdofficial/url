@@ -27,92 +27,92 @@ function Verify() {
   let srcText = document.getElementById('srcText').value;
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdop") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
   //////////////////
 else if (dstText.toLowerCase() == "light") {
-    window.open('fl.html');
+    window.location.href=('fl.html');
   }
 else if (dstText.toLowerCase() == "fl") {
-    window.open('fl.html');
+    window.location.href=('fl.html');
   }
 else if (dstText.toLowerCase() == "notepad") {
-    window.open('https://notepad.js.org');
+    window.location.href=('https://notepad.js.org');
   }
 else if (dstText.toLowerCase() == "np") {
-    window.open('https://notepad.js.org');
+    window.location.href=('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
   else if (dstText == "1234") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bd official products") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdofficialproducts") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
   //////////////////
   else if (dstText == "1436") {
-    window.open('https://bdop.netlify.app');
+    window.location.href=('https://bdop.netlify.app');
   }
 ////////////////////
 else if (dstText.toLowerCase() == "google") {
-    window.open('https://google.com');
+    window.location.href=('https://google.com');
   }
 else if (dstText.toLowerCase() == "youtube") {
-    window.open('https://youtube.com');
+    window.location.href=('https://youtube.com');
   }
 else if (dstText.toLowerCase() == "facebook") {
-    window.open('https://facebook.com');
+    window.location.href=('https://facebook.com');
   }
 else if (dstText.toLowerCase() == "instagram") {
-  window.open("https://instagram.com");
+  window.location.href=("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tiktok") {
-  window.open("https://instagram.com");
+  window.location.href=("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "twitter") {
-  window.open("https://twitter.com");
+  window.location.href=("https://twitter.com");
 }
 ////////////////////
 else if (dstText.toLowerCase() == "go") {
-  window.open("https://google.com");
+  window.location.href=("https://google.com");
 }
 else if (dstText.toLowerCase() == "gg") {
-  window.open("https://google.com");
+  window.location.href=("https://google.com");
 }
 else if (dstText.toLowerCase() == "yt") {
-  window.open("https://youtube.com");
+  window.location.href=("https://youtube.com");
 }
 else if (dstText.toLowerCase() == "fb") {
   sbfade.opacity = 0;
-  window.open('https://facebook.com');
+  window.location.href=('https://facebook.com');
 }
 else if (dstText.toLowerCase() == "ig") {
-  window.open("https://instagram.com");
+  window.location.href=("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tt") {
-  window.open("https://tiktok.com");
+  window.location.href=("https://tiktok.com");
 }
 else if (dstText.toLowerCase() == "tw") {
-  window.open("https://twitter.com");
+  window.location.href=("https://twitter.com");
 }
  else if(dstText==""){
    alert("Fill-Token-Correctly");
  }
 else if (dstText.includes('http')) {
   var sel = document.getElementById('dstText').value;
-  window.open(sel);
+  window.location.href=(sel);
  }
  else if (dstText.includes('.')) {
   var sel = document.getElementById('dstText').value;
-  window.open('http://' + sel);
+  window.location.href=('http://' + sel);
  }
   //////////////////
   //////////////////
@@ -120,7 +120,7 @@ else if (srcText == "") {
   alert("Fill-Token-Correctly");
 }
 else {
- window.open('https://www.google.com/search?sitesearch=&q='+srcText);
+ window.location.href=('https://www.google.com/search?sitesearch=&q='+srcText);
   }
 };
 /////////////////

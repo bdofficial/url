@@ -7,11 +7,11 @@ self.addEventListener('activate', (e) => {
     }))
   }));
 });
-var cacheName = 'dj—ko';
+var cacheName = 'dj—kio';
 //save cache
 var filesToCache = [
   "/",
-  "main.js",
+
   "fl.html"
   ];
 /* Start the service worker and cache all of the app's content */
