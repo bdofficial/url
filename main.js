@@ -31,103 +31,103 @@ function Verify() {
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
  var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
-  else if (dstText == "bdop") {
+  else if (dstText.toLowerCase() == "bdop") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
   //////////////////
-else if (dstText == "light") {
+else if (dstText.toLowerCase() == "light") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('fl.html');
+    window.open('fl.html');
   }
-else if (dstText == "fl") {
+else if (dstText.toLowerCase() == "fl") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('fl.html');
+    window.open('fl.html');
   }
-else if (dstText == "notepad") {
+else if (dstText.toLowerCase() == "notepad") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://notepad.js.org');
+    window.open('https://notepad.js.org');
   }
-else if (dstText == "np") {
+else if (dstText.toLowerCase() == "np") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://notepad.js.org');
+    window.open('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
   else if (dstText == "1234") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
-  else if (dstText == "bd official products") {
+  else if (dstText.toLowerCase() == "bd official products") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
-  else if (dstText == "bdofficialproducts") {
+  else if (dstText.toLowerCase() == "bdofficialproducts") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
   //////////////////
   else if (dstText == "1436") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://bdop.netlify.app');
+    window.open('https://bdop.netlify.app');
   }
 ////////////////////
-else if (dstText == "google") {
+else if (dstText.toLowerCase() == "google") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://google.com');
+    window.open('https://google.com');
   }
-else if (dstText == "youtube") {
+else if (dstText.toLowerCase() == "youtube") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://youtube.com');
+    window.open('https://youtube.com');
   }
-else if (dstText == "facebook") {
+else if (dstText.toLowerCase() == "facebook") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('https://facebook.com');
+    window.open('https://facebook.com');
   }
-else if (dstText == "instagram") {
+else if (dstText.toLowerCase() == "instagram") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://instagram.com");
+  window.open("https://instagram.com");
 }
-else if (dstText == "tiktok") {
+else if (dstText.toLowerCase() == "tiktok") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://instagram.com");
+  window.open("https://instagram.com");
 }
-else if (dstText == "twitter") {
+else if (dstText.toLowerCase() == "twitter") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://twitter.com");
+  window.open("https://twitter.com");
 }
 ////////////////////
-else if (dstText == "go") {
+else if (dstText.toLowerCase() == "go") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://google.com");
+  window.open("https://google.com");
 }
-else if (dstText == "gg") {
+else if (dstText.toLowerCase() == "gg") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://google.com");
+  window.open("https://google.com");
 }
-else if (dstText == "yt") {
+else if (dstText.toLowerCase() == "yt") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://youtube.com");
+  window.open("https://youtube.com");
 }
-else if (dstText == "fb") {
+else if (dstText.toLowerCase() == "fb") {
   var sbfade=valuehide;sbfade.opacity=0;
   sbfade.opacity = 0;
-  window.location.replace('https://facebook.com');
+  window.open('https://facebook.com');
 }
-else if (dstText == "ig") {
+else if (dstText.toLowerCase() == "ig") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://instagram.com");
+  window.open("https://instagram.com");
 }
-else if (dstText == "tt") {
+else if (dstText.toLowerCase() == "tt") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://tiktok.com");
+  window.open("https://tiktok.com");
 }
-else if (dstText == "tw") {
+else if (dstText.toLowerCase() == "tw") {
   var sbfade=valuehide;sbfade.opacity=0;
-  window.location.replace("https://twitter.com");
+  window.open("https://twitter.com");
 }
  else if(dstText==""){
    alert("Fill-Token-Correctly");
@@ -135,12 +135,12 @@ else if (dstText == "tw") {
 else if (dstText.includes('http')) {
  var sbfade=valuehide;sbfade.opacity=0;
   var sel = document.getElementById('dstText').value;
-  window.location.replace(sel);
+  window.open(sel);
  }
  else if (dstText.includes('.')) {
  var sbfade=valuehide;sbfade.opacity=0;
   var sel = document.getElementById('dstText').value;
-  window.location.replace('http://' + sel);
+  window.open('http://' + sel);
  }
   //////////////////
   //////////////////
@@ -149,7 +149,7 @@ else if (srcText == "") {
 }
 else {
  var sbfade=valuehide;sbfade.opacity=0;
- window.location.replace('https://www.google.com/search?sitesearch=&q='+srcText);
+ window.open('https://www.google.com/search?sitesearch=&q='+srcText);
   }
 };
 /////////////////
