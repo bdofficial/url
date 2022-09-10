@@ -10,118 +10,118 @@ function Verify() {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bdop") {
+  else if (dstText,srcText.toLowerCase() == "bdop") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
-else if (dstText.toLowerCase() == "light") {
+else if (dstText,srcText.toLowerCase() == "light") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('fl.html');
   }
-else if (dstText.toLowerCase() == "fl") {
+else if (dstText,srcText.toLowerCase() == "fl") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('fl.html');
   }
-else if (dstText.toLowerCase() == "notepad") {
+else if (dstText,srcText.toLowerCase() == "notepad") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://notepad.js.org');
   }
-else if (dstText.toLowerCase() == "np") {
+else if (dstText,srcText.toLowerCase() == "np") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
-  else if (dstText == "1234") {
+  else if (dstText,srcText == "1234") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bd official products") {
+  else if (dstText,srcText.toLowerCase() == "bd official products") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bdofficialproducts") {
+  else if (dstText,srcText.toLowerCase() == "bdofficialproducts") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
-  else if (dstText == "1436") {
+  else if (dstText,srcText == "1436") {
  var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
 ////////////////////
-else if (dstText.toLowerCase() == "google") {
+else if (dstText,srcText.toLowerCase() == "google") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://google.com');
   }
-else if (dstText.toLowerCase() == "youtube") {
+else if (dstText,srcText.toLowerCase() == "youtube") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://youtube.com');
   }
-else if (dstText.toLowerCase() == "facebook") {
+else if (dstText,srcText.toLowerCase() == "facebook") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://facebook.com');
   }
-else if (dstText.toLowerCase() == "instagram") {
+else if (dstText,srcText.toLowerCase() == "instagram") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "tiktok") {
+else if (dstText,srcText.toLowerCase() == "tiktok") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "twitter") {
+else if (dstText,srcText.toLowerCase() == "twitter") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://twitter.com");
 }
 ////////////////////
-else if (dstText.toLowerCase() == "go") {
+else if (dstText,srcText.toLowerCase() == "go") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://google.com");
 }
-else if (dstText.toLowerCase() == "gg") {
+else if (dstText,srcText.toLowerCase() == "gg") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://google.com");
 }
-else if (dstText.toLowerCase() == "yt") {
+else if (dstText,srcText.toLowerCase() == "yt") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://youtube.com");
 }
-else if (dstText.toLowerCase() == "fb") {
+else if (dstText,srcText.toLowerCase() == "fb") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace('https://facebook.com');
 }
-else if (dstText.toLowerCase() == "fbo") {
+else if (dstText,srcText.toLowerCase() == "fbo") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace('');
 }
-else if (dstText.toLowerCase() == "ig") {
+else if (dstText,srcText.toLowerCase() == "ig") {
  var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "tt") {
+else if (dstText,srcText.toLowerCase() == "tt") {
  var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://tiktok.com");
 }
-else if (dstText.toLowerCase() == "tw") {
+else if (dstText,srcText.toLowerCase() == "tw") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace("https://twitter.com");
 }
- else if(dstText==""){
-   alert("Fill-Token-Correctly");
- }
-else if (dstText.includes('http')) {
+else if (dstText,srcText.includes('http')) {
  var sbfade=valuehide;sbfade.opacity=0;
   var sel = document.getElementById('dstText').value;
   window.location.replace(sel);
  }
- else if (dstText.includes('.')) {
+ else if (dstText,srcText.includes('.')) {
  var sbfade=valuehide;sbfade.opacity=0;
   window.location.replace('http://' + dstText);
  }
   //////////////////
+else if (dstText == "") {
+  alert("Fill-Token-Correctly");
+}
   //////////////////
 else if (srcText == "") {
   alert("Fill-Token-Correctly");
