@@ -10,6 +10,10 @@ function Verify() {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
   }
+  else if (dstText,srcText.toLowerCase() == "bd") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('decode.html');
+  }
   else if (dstText,srcText.toLowerCase() == "bdop") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('https://bdop.netlify.app');
