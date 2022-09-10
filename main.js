@@ -91,7 +91,6 @@ else if (dstText.toLowerCase() == "yt") {
   window.location.href=("https://youtube.com");
 }
 else if (dstText.toLowerCase() == "fb") {
-  sbfade.opacity = 0;
   window.location.href=('https://facebook.com');
 }
 else if (dstText.toLowerCase() == "ig") {
