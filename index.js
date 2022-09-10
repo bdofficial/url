@@ -1,148 +1,124 @@
-window.onload = function() {
-
-};
-//check if "dstText" is in localStorage
-if (localStorage["dstText"])
-{
-  var dstText = localStorage["dstText"];
-  document.getElementById("dstText").value = dstText;
-}
-else
-{
-  document.getElementById("dstText").placeholder = " ";
-  console.log("dstText no found in localStorage")
-}
-//save entered gmail address
-document.getElementById("save").addEventListener("click", function()
-{
-  var dstText = document.getElementById("dstText").value;
-  //localStorage["dstText"] = dstText ;
-  localStorage.setItem("dstText", dstText);
-  console.log("gmail id saved")
-}, false);
-//////////////////
 /////////////////
 //hide display
 const valuehide=document.getElementById('products').style;
 (function fade(){(sbfade.opacity-=0)<0?sbfade.display="none":setTimeout(fade,0)})();  
 ////////////////
 function Verify() {
-  let srcText = document.getElementById('srcText').value;
-  let dstText = document.getElementById("dstText").value;
-  if (dstText == "14369") {
+  let srcText = document.getElementById("srcText").value;
+  if (srcText == "14369") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bdop") {
+  else if (srcText.toLowerCase() == "bdop") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
   //////////////////
-else if (dstText.toLowerCase() == "light") {
+else if (srcText.toLowerCase() == "light") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('fl.html');
   }
-else if (dstText.toLowerCase() == "fl") {
+else if (srcText.toLowerCase() == "fl") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('fl.html');
   }
-else if (dstText.toLowerCase() == "notepad") {
+else if (srcText.toLowerCase() == "notepad") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://notepad.js.org');
   }
-else if (dstText.toLowerCase() == "np") {
+else if (srcText.toLowerCase() == "np") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
-  else if (dstText == "1234") {
+  else if (srcText == "1234") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bd official products") {
+  else if (srcText.toLowerCase() == "bd official products") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
-  else if (dstText.toLowerCase() == "bdofficialproducts") {
+  else if (srcText.toLowerCase() == "bdofficialproducts") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
   //////////////////
-  else if (dstText == "1436") {
+  else if (srcText == "1436") {
  var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://bdop.netlify.app');
   }
 ////////////////////
-else if (dstText.toLowerCase() == "google") {
+else if (srcText.toLowerCase() == "google") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://google.com');
   }
-else if (dstText.toLowerCase() == "youtube") {
+else if (srcText.toLowerCase() == "youtube") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://youtube.com');
   }
-else if (dstText.toLowerCase() == "facebook") {
+else if (srcText.toLowerCase() == "facebook") {
 var sbfade=valuehide;sbfade.opacity=0;
     window.open('https://facebook.com');
   }
-else if (dstText.toLowerCase() == "instagram") {
+else if (srcText.toLowerCase() == "instagram") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "tiktok") {
+else if (srcText.toLowerCase() == "tiktok") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "twitter") {
+else if (srcText.toLowerCase() == "twitter") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://twitter.com");
 }
 ////////////////////
-else if (dstText.toLowerCase() == "go") {
+else if (srcText.toLowerCase() == "go") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://google.com");
 }
-else if (dstText.toLowerCase() == "gg") {
+else if (srcText.toLowerCase() == "gg") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://google.com");
 }
-else if (dstText.toLowerCase() == "yt") {
+else if (srcText.toLowerCase() == "yt") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://youtube.com");
 }
-else if (dstText.toLowerCase() == "fb") {
+else if (srcText.toLowerCase() == "fb") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open('https://facebook.com');
 }
-else if (dstText.toLowerCase() == "fbo") {
+else if (srcText.toLowerCase() == "fbo") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open('');
 }
-else if (dstText.toLowerCase() == "ig") {
+else if (srcText.toLowerCase() == "ig") {
  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://instagram.com");
 }
-else if (dstText.toLowerCase() == "tt") {
+else if (srcText.toLowerCase() == "tt") {
  var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://tiktok.com");
 }
-else if (dstText.toLowerCase() == "tw") {
+else if (srcText.toLowerCase() == "tw") {
 var sbfade=valuehide;sbfade.opacity=0;
   window.open("https://twitter.com");
 }
- else if(dstText==""){
+ else if(srcText==""){
    alert("Fill-Token-Correctly");
  }
-else if (dstText.includes('http')) {
+else if (srcText.includes('http')) {
  var sbfade=valuehide;sbfade.opacity=0;
-  var sel = document.getElementById('dstText').value;
+  var sel = document.getElementById('srcText').value;
   window.open(sel);
  }
- else if (dstText.includes('.')) {
+ else if (srcText.includes('.')) {
  var sbfade=valuehide;sbfade.opacity=0;
-  var sel = document.getElementById('dstText').value;
+  var sel = document.getElementById('srcText').value;
   window.open('http://' + sel);
  }
   //////////////////
@@ -153,5 +129,4 @@ else if (srcText == "") {
 else {
  window.open('https://www.google.com/search?sitesearch=&q='+srcText);
   }
-};
-/////////////////
+};///////////////

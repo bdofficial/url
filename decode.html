@@ -17,20 +17,7 @@
 rel="shortcut icon"
 href="icons/icon.png"
 type="image/png"/>
-<style>
-  #srcText{
-    font-style: italic;
-    font-size: 1.03rem;
-    background-color: black;
-    color:hsla(235, 0%, 87%, 1);
-    text-align-last:center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 11rem;
-    outline: none;
-    border-radius: 24px;
-  }
-</style>
+<!------HIDE------>
         <style>
  .ele {
   animation: 0.3s fadeIn;
@@ -55,7 +42,7 @@ type="image/png"/>
 <div class="container">
 <div class="jumbotron">
 <!------INPUT------>
-<form onsubmit="Verify();return false">
+<form>
 <div class="form-group">
 <center>
   </br>
@@ -67,24 +54,31 @@ type="image/png"/>
               </br>
                 </br>
                   </br>
-                    </br>
-                      </br>
-                        </br>
-  <level style="font-size: 2rem"  id="save" onclick="Verify();">BD-OFFiCiAL</level></br>
+  <level style="font-size: 2rem">BD-OFFiCiAL</level></br>
+<label for="ciphertext" class="h4">ENTER-TOKEN</label>
 </center>
-<center style="padding-top: 0.05rem">
-<input class="form-control text-monospace" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here...">
+<center style="padding-top: 0.3rem">
+<textarea class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="|"></textarea>
 </center>
 </div>
 <!------RESULT------>
 <div class="form-group">
 <center>
-<textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" hidden></textarea>
+<textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" ></textarea>
 </center>
-<CENTER style="padding-top: 4.7px">
-    <input hidden style="background-color:rgb(62, 159, 238); color:#ffffff;" type="submit"value="ENTER"/>
-</CENTER>
+<CENTER style="padding-top: 4.2px">
+    <input style="background-color:green; color:#ffffff;" type="button" id="save" onclick="Verify();" value="ENTER"/>
+</CENTER>   
+</div>
 </form>
+<!------VIP&TOKEN------> 
+<div>
+<center style="padding-top: 0.6rem"><a style="
+text-decoration:none;
+background-color:rgb(62, 159, 238) ;color: white" href="encode.html">&nbsp;CREATE-TOKEN&nbsp;</a></center>
+<center style="padding-top: 0.6rem"><a style="
+text-decoration:none;
+background-color: goldenrod;color: white" href="vip.html">&nbsp;&nbsp;VIP&nbsp;&nbsp;</a></center>
 </div>
 <!------HIDE------> 
 <div hidden>
@@ -126,7 +120,7 @@ type="image/png"/>
 </div>
 </div>
 </section>
-<!--SEARCH-->
+<!--DECODE-->
 <script>
     function clearText() {
         document.getElementById("srcText").value = '';
@@ -330,6 +324,34 @@ type="image/png"/>
 </main>
 <!------JavaScript------>
 <script src="main.js"></script>
+<!------AUTO RUN------>
+<script>
+  window.onload = function() {
+  
+  };
+</script>
+<!------SAVE------>
+<script> 
+//check if "dstText" is in localStorage
+if (localStorage["dstText"])
+{
+  var dstText = localStorage["dstText"];
+  document.getElementById("dstText").value = dstText;
+}
+else
+{
+  document.getElementById("dstText").placeholder = " ";
+  console.log("dstText no found in localStorage")
+}
+//save entered gmail address
+document.getElementById("save").addEventListener("click", function()
+{
+  var dstText = document.getElementById("dstText").value;
+  //localStorage["dstText"] = dstText ;
+  localStorage.setItem("dstText", dstText);
+  console.log("gmail id saved")
+}, false);
+</script>
 <!------JavaScript------>
 <script src="pwa.js"></script>
 <!------END------>
