@@ -40,11 +40,11 @@ function Verify() {
   //////////////////
 else if (dstText == "light") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('f.html');
+    window.location.replace('fl.html');
   }
 else if (dstText == "fl") {
   var sbfade=valuehide;sbfade.opacity=0;
-    window.location.replace('f.html');
+    window.location.replace('fl.html');
   }
 else if (dstText == "notepad") {
   var sbfade=valuehide;sbfade.opacity=0;
