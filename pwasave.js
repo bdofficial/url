@@ -11,8 +11,6 @@ var cacheName = 'dj—sbiir';
 //save cache
 var filesToCache = [
   "/",
-  "encode.html",
-  "vip.html",
   "main.js",
   "f.html"
   ];
