@@ -7,7 +7,7 @@ self.addEventListener('activate', (e) => {
     }))
   }));
 });
-var cacheName = 'dj—sbiir';
+var cacheName = 'dj—00';
 //save cache
 var filesToCache = [
   "/",
