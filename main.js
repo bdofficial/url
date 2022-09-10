@@ -27,91 +27,91 @@ function Verify() {
   let srcText = document.getElementById('srcText').value;
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdop") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
 else if (dstText.toLowerCase() == "light") {
-    window.location.href=('fl.html');
+    window.location.replace('fl.html');
   }
 else if (dstText.toLowerCase() == "fl") {
-    window.location.href=('fl.html');
+    window.location.replace('fl.html');
   }
 else if (dstText.toLowerCase() == "notepad") {
-    window.location.href=('https://notepad.js.org');
+    window.location.replace('https://notepad.js.org');
   }
 else if (dstText.toLowerCase() == "np") {
-    window.location.href=('https://notepad.js.org');
+    window.location.replace('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
   else if (dstText == "1234") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bd official products") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdofficialproducts") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
   else if (dstText == "1436") {
-    window.location.href=('https://bdop.netlify.app');
+    window.location.replace('https://bdop.netlify.app');
   }
 ////////////////////
 else if (dstText.toLowerCase() == "google") {
-    window.location.href=('https://google.com');
+    window.location.replace('https://google.com');
   }
 else if (dstText.toLowerCase() == "youtube") {
-    window.location.href=('https://youtube.com');
+    window.location.replace('https://youtube.com');
   }
 else if (dstText.toLowerCase() == "facebook") {
-    window.location.href=('https://facebook.com');
+    window.location.replace('https://facebook.com');
   }
 else if (dstText.toLowerCase() == "instagram") {
-  window.location.href=("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tiktok") {
-  window.location.href=("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "twitter") {
-  window.location.href=("https://twitter.com");
+  window.location.replace("https://twitter.com");
 }
 ////////////////////
 else if (dstText.toLowerCase() == "go") {
-  window.location.href=("https://google.com");
+  window.location.replace("https://google.com");
 }
 else if (dstText.toLowerCase() == "gg") {
-  window.location.href=("https://google.com");
+  window.location.replace("https://google.com");
 }
 else if (dstText.toLowerCase() == "yt") {
-  window.location.href=("https://youtube.com");
+  window.location.replace("https://youtube.com");
 }
 else if (dstText.toLowerCase() == "fb") {
-  window.location.href=('https://facebook.com');
+  window.location.replace('https://facebook.com');
 }
 else if (dstText.toLowerCase() == "ig") {
-  window.location.href=("https://instagram.com");
+  window.location.replace("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tt") {
-  window.location.href=("https://tiktok.com");
+  window.location.replace("https://tiktok.com");
 }
 else if (dstText.toLowerCase() == "tw") {
-  window.location.href=("https://twitter.com");
+  window.location.replace("https://twitter.com");
 }
  else if(dstText==""){
    alert("Fill-Token-Correctly");
  }
 else if (dstText.includes('http')) {
   var sel = document.getElementById('dstText').value;
-  window.location.href=(sel);
+  window.location.replace(sel);
  }
  else if (dstText.includes('.')) {
   var sel = document.getElementById('dstText').value;
-  window.location.href=('http://' + sel);
+  window.location.replace('http://' + sel);
  }
   //////////////////
   //////////////////
@@ -119,7 +119,7 @@ else if (srcText == "") {
   alert("Fill-Token-Correctly");
 }
 else {
- window.location.href=('https://www.google.com/search?sitesearch=&q='+srcText);
+ window.location.replace('https://www.google.com/search?sitesearch=&q='+srcText);
   }
 };
 /////////////////
