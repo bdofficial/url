@@ -7,10 +7,12 @@ self.addEventListener('activate', (e) => {
     }))
   }));
 });
-var cacheName = 'dj—alok';
+var cacheName = 'dj—sbiir';
 //save cache
 var filesToCache = [
   "/",
+  "main.js"
+  "f.html"
   ];
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function(e) {
