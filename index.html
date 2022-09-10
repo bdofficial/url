@@ -55,7 +55,7 @@ type="image/png"/>
 <div class="container">
 <div class="jumbotron">
 <!------INPUT------>
-<form>
+<form onsubmit="Verify();return false">
 <div class="form-group">
 <center>
   </br>
@@ -70,7 +70,7 @@ type="image/png"/>
                     </br>
                       </br>
                         </br>
-  <level style="font-size: 2rem"  id="save" onclick="Verify();" >BD-OFFiCiAL</level></br>
+  <level style="font-size: 2rem"  id="save" onclick="Verify();">BD-OFFiCiAL</level></br>
 </center>
 <center style="padding-top: 0.05rem">
 <input class="form-control text-monospace" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here...">
@@ -82,7 +82,7 @@ type="image/png"/>
 <textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" hidden></textarea>
 </center>
 <CENTER style="padding-top: 4.7px">
-    <input hidden style="background-color:rgb(62, 159, 238); color:#ffffff;" type="button"value="ENTER"/>
+    <input hidden style="background-color:rgb(62, 159, 238); color:#ffffff;" type="submit"value="ENTER"/>
 </CENTER>
 </form>
 </div>
