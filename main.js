@@ -38,9 +38,21 @@ function Verify() {
     window.location.replace('https://bdop.netlify.app');
   }
   //////////////////
+else if (dstText == "light") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('f.html');
+  }
 else if (dstText == "f") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('f.html');
+  }
+else if (dstText == "notepad") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://notepad.js.org');
+  }
+else if (dstText == "np") {
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.location.replace('https://notepad.js.org');
   }
   //////////////////
   //////////////////
