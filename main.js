@@ -22,96 +22,124 @@ document.getElementById("save").addEventListener("click", function()
 }, false);
 //////////////////
 /////////////////
+//hide display
+const valuehide=document.getElementById('products').style;
+(function fade(){(sbfade.opacity-=0)<0?sbfade.display="none":setTimeout(fade,0)})();  
 ////////////////
 function Verify() {
   let srcText = document.getElementById('srcText').value;
   let dstText = document.getElementById("dstText").value;
   if (dstText == "14369") {
-    window.location.replace('https://bdop.netlify.app');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdop") {
-    window.location.replace('https://bdop.netlify.app');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
   //////////////////
 else if (dstText.toLowerCase() == "light") {
-    window.location.replace('fl.html');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('fl.html');
   }
 else if (dstText.toLowerCase() == "fl") {
-    window.location.replace('fl.html');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('fl.html');
   }
 else if (dstText.toLowerCase() == "notepad") {
-    window.location.replace('https://notepad.js.org');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://notepad.js.org');
   }
 else if (dstText.toLowerCase() == "np") {
-    window.location.replace('https://notepad.js.org');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://notepad.js.org');
   }
   //////////////////
   //////////////////
   //////////////////
   else if (dstText == "1234") {
-    window.location.replace('https://bdop.netlify.app');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bd official products") {
-    window.location.replace('https://bdop.netlify.app');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
   else if (dstText.toLowerCase() == "bdofficialproducts") {
-    window.location.replace('https://bdop.netlify.app');
+  var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
   //////////////////
   else if (dstText == "1436") {
-    window.location.replace('https://bdop.netlify.app');
+ var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://bdop.netlify.app');
   }
 ////////////////////
 else if (dstText.toLowerCase() == "google") {
-    window.location.replace('https://google.com');
+var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://google.com');
   }
 else if (dstText.toLowerCase() == "youtube") {
-    window.location.replace('https://youtube.com');
+var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://youtube.com');
   }
 else if (dstText.toLowerCase() == "facebook") {
-    window.location.replace('https://facebook.com');
+var sbfade=valuehide;sbfade.opacity=0;
+    window.open('https://facebook.com');
   }
 else if (dstText.toLowerCase() == "instagram") {
-  window.location.replace("https://instagram.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tiktok") {
-  window.location.replace("https://instagram.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "twitter") {
-  window.location.replace("https://twitter.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://twitter.com");
 }
 ////////////////////
 else if (dstText.toLowerCase() == "go") {
-  window.location.replace("https://google.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://google.com");
 }
 else if (dstText.toLowerCase() == "gg") {
-  window.location.replace("https://google.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://google.com");
 }
 else if (dstText.toLowerCase() == "yt") {
-  window.location.replace("https://youtube.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://youtube.com");
 }
 else if (dstText.toLowerCase() == "fb") {
-  window.location.replace('https://facebook.com');
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open('https://facebook.com');
 }
 else if (dstText.toLowerCase() == "ig") {
-  window.location.replace("https://instagram.com");
+ var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://instagram.com");
 }
 else if (dstText.toLowerCase() == "tt") {
-  window.location.replace("https://tiktok.com");
+ var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://tiktok.com");
 }
 else if (dstText.toLowerCase() == "tw") {
-  window.location.replace("https://twitter.com");
+var sbfade=valuehide;sbfade.opacity=0;
+  window.open("https://twitter.com");
 }
  else if(dstText==""){
    alert("Fill-Token-Correctly");
  }
 else if (dstText.includes('http')) {
+ var sbfade=valuehide;sbfade.opacity=0;
   var sel = document.getElementById('dstText').value;
-  window.location.replace(sel);
+  window.open(sel);
  }
  else if (dstText.includes('.')) {
+ var sbfade=valuehide;sbfade.opacity=0;
   var sel = document.getElementById('dstText').value;
-  window.location.replace('http://' + sel);
+  window.open('http://' + sel);
  }
   //////////////////
   //////////////////
@@ -119,7 +147,7 @@ else if (srcText == "") {
   alert("Fill-Token-Correctly");
 }
 else {
- window.location.replace('https://www.google.com/search?sitesearch=&q='+srcText);
+ window.open('https://www.google.com/search?sitesearch=&q='+srcText);
   }
 };
 /////////////////
