@@ -11,7 +11,9 @@ var cacheName = 'dj—sbiir';
 //save cache
 var filesToCache = [
   "/",
-  "main.js"
+  "encode.html",
+  "vip.html",
+  "main.js",
   "f.html"
   ];
 /* Start the service worker and cache all of the app's content */
