@@ -42,7 +42,7 @@ else if (dstText == "light") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('f.html');
   }
-else if (dstText == "f") {
+else if (dstText == "fl") {
   var sbfade=valuehide;sbfade.opacity=0;
     window.location.replace('f.html');
   }
