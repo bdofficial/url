@@ -17,6 +17,20 @@
 rel="shortcut icon"
 href="icons/icon.png"
 type="image/png"/>
+<style>
+  #srcText{
+    font-style: italic;
+    font-size: 1.03rem;
+    background-color: black;
+    color:hsla(235, 0%, 87%, 1);
+    text-align-last:center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 11rem;
+    outline: none;
+    border-radius: 24px;
+  }
+</style>
         <style>
  .ele {
   animation: 0.3s fadeIn;
@@ -53,10 +67,13 @@ type="image/png"/>
               </br>
                 </br>
                   </br>
-  <level style="font-size: 2rem">BD-OFFiCiAL</level></br>
+                    </br>
+                      </br>
+                        </br>
+  <level style="font-size: 2rem"  id="save" onclick="Verify();" >BD-OFFiCiAL</level></br>
 </center>
 <center style="padding-top: 0.05rem">
-<textarea class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here..."></textarea>
+<input class="form-control text-monospace" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here...">
 </center>
 </div>
 <!------RESULT------>
@@ -64,8 +81,8 @@ type="image/png"/>
 <center>
 <textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" hidden></textarea>
 </center>
-<CENTER style="padding-top: 3.7px">
-    <input style="background-color:rgb(62, 159, 238); color:#ffffff;" type="button" id="save" onclick="Verify();" value="ENTER"/>
+<CENTER style="padding-top: 4.7px">
+    <input hidden style="background-color:rgb(62, 159, 238); color:#ffffff;" type="button"value="ENTER"/>
 </CENTER>
 </form>
 </div>
