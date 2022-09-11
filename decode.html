@@ -1,5 +1,5 @@
 <!DOCTYPE html>      
-<html class="ele" id="products">
+<html 2 4 15 16 class="ele" id="products">
 <head>
 <meta name="color-scheme"content="dark">
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0"/>  
@@ -34,42 +34,28 @@ type="image/png"/>
 }
     </style>
 <!------END------>
-</head>
-<body>
-<!------MAIN------>
-<main style="flex: 1;">
-<section class="section3">
-<div class="container">
-<div class="jumbotron">
-<!------INPUT------>
-<div class="form-group">
-<center>
-  </br>
-    </br>
-      </br>
-        </br>
-          </br>
-            </br>
-              </br>
-                </br>
-                  </br>
+</head> 
+<body>    
+</br></br></br></br></br></br></br></br>
+<!------FORM------>
+<form>
+<!------INPUT------>   
+<center>    
   <level style="font-size: 2rem">BD-OFFiCiAL</level></br>
 <label for="ciphertext" class="h4">ENTER-TOKEN</label>
 </center>
 <center style="padding-top: 0.3rem">
 <textarea class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="|"></textarea>
 </center>
-</div>
+<!------END------>
 <!------RESULT------>
-<form>
-<div class="form-group">
 <center>
-<textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" ></textarea>
+<textarea hidden class="form-control text-monospace" rows="4" id="dstText" spellcheck="false"></textarea>
 </center>
-<CENTER style="padding-top: 4.2px">
+<center style="padding-top: 4.2px">
     <input style="background-color:green; color:#ffffff;" type="button" id="save" onclick="Verify();" value="ENTER"/>
-</CENTER>   
-</div>
+</center>
+<!------END------>
 </form>
 <!------VIP&TOKEN------> 
 <div>
@@ -80,6 +66,8 @@ background-color:rgb(62, 159, 238) ;color: white" href="encode.html">&nbsp;CREAT
 text-decoration:none;
 background-color: goldenrod;color: white" href="vip.html">&nbsp;&nbsp;VIP&nbsp;&nbsp;</a></center>
 </div>
+<!------OTHER------>
+<div>
 <!------HIDE------> 
 <div hidden>
 <!------CODE-TYPE------> 
@@ -116,10 +104,6 @@ background-color: goldenrod;color: white" href="vip.html">&nbsp;&nbsp;VIP&nbsp;&
 </div>
 <!------HIDE------> 
 </div>
-<!------END------>
-</div>
-</div>
-</section>
 <!--DECODE-->
 <script>
     function clearText() {
@@ -321,7 +305,6 @@ background-color: goldenrod;color: white" href="vip.html">&nbsp;&nbsp;VIP&nbsp;&
     }
 </script>
 <!------END------>
-</main>
 <!------JavaScript------>
 <script src="main.js"></script>
 <!------AUTO RUN------>
@@ -355,6 +338,8 @@ document.getElementById("save").addEventListener("click", function()
 <!------JavaScript------>
 <script src="pwa.js"></script>
 <!------END------>
+</div>
+<!------OTHER END------>
 </body>
 <!------END------>    
 </html>
