@@ -1,5 +1,5 @@
 <!DOCTYPE html>      
-<html lang="en" class="ele" id="products">
+<html class="ele" id="products">
 <head>
 <meta name="color-scheme"content="dark">
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0"/>  
@@ -38,13 +38,6 @@
 </head>
 <!---START--->
 <body>
-<main style="flex: 1;">
-<section class="section3">
-<div class="container">
-<div class="jumbotron">
-<!------INPUT------>
-<div class="form-group">
-<center>
   </br>
     </br>
       </br>
@@ -54,15 +47,18 @@
               </br>
                 </br>
                   </br>
-  <level style="font-size: 2rem">BD-OFFiCiAL</level></br>
-<label for="ciphertext" class="h4">ENTER-TOKEN</label>
+                    </br>
+                      </br>
+                        </br>
+<!------INPUT------>
+<center>
+<level style="font-size: 2rem" onclick="Verify();">BD-OFFiCiAL</level></br>
 </center>
-<center style="padding-top: 0.3rem">
-<input class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="|">
-</center>
-</div>
+<center style="padding-top: 0.05rem">
+  <input class="form-control text-monospace"oninput="decrypt()" id="srcText" spellcheck="false" placeholder="Type url here...">
+</center> 
 <!------RESULT------> 
-<form>
+<form>  
 <div class="form-group" >
 <center>
 <textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" ></textarea>
@@ -108,10 +104,6 @@
 </div>
 <!------HIDE------> 
 </div>
-<!------END------>   
-</div>
-</div>
-</section>
 <!--DECODE-->
 <script>
     function clearText() {
@@ -313,7 +305,6 @@
     }
 </script>
 <!------END------>
-</main>
 <!------JavaScript------>
 <script src="main.js"></script>
 <!------SAVE-HTML------>
