@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0"/>  
 <!------STYLE------>
 <style>
-  #dstText{
+  #srcText{
     font-style: italic;
     font-size: 1.03rem;
     background-color: black;
@@ -38,6 +38,13 @@
 </head>
 <!---START--->
 <body>
+<main style="flex: 1;">
+<section class="section3">
+<div class="container">
+<div class="jumbotron">
+<!------INPUT------>
+<div class="form-group">
+<center>
   </br>
     </br>
       </br>
@@ -47,60 +54,266 @@
               </br>
                 </br>
                   </br>
-                    </br>
-                      </br>
-                        </br>
-<!------MAIN------>
-<form onsubmit="Verify();return false">
-<center>
- <level style="font-size: 2rem" onclick="Verify();">BD-OFFiCiAL</level></br>
+  <level style="font-size: 2rem">BD-OFFiCiAL</level></br>
+<label for="ciphertext" class="h4">ENTER-TOKEN</label>
 </center>
-<center style="padding-top: 0.05rem">
-<input class="form-control text-monospace" id="dstText" spellcheck="false" placeholder="Type url here..."> 
+<center style="padding-top: 0.3rem">
+<input class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="|">
 </center>
-<CENTER style="padding-top: 4.7px">
-  <input hidden style="background-color:rgb(62, 159, 238); color:#ffffff;" type="submit" value="ENTER"/>
-</CENTER>
-</form>
-<input value=" " hidden id="srcText">
-<!------END------>
-<!------HIDE------>
-<div hidden>
-  <!------CODE-TYPE------>
-  <div class="form-inline align-items-center">
-    <label for="codeType" class="h5 m-2">Code Type</label>
-    <select class="form-control" id="codeType" onchange="decrypt();" style="width:14rem;">
-      <option value="a1z26" selected>A=1, B=2, C=3, ...</option>
-      <option value="a0z25">A=0, B=1, C=2, ...</option>
-      <option value="ascii">ASCII</option>
-      <option value="hex">Hex ASCII</option>
-      <option value="binary">Binary ASCII</option>
-      <option value="tapcode">Tap Code / Knock Code</option>
-      <option value="elements">Periodic Table (1=H, 2=He, ...)</option>
-    </select>
-  </div>
-  <!------STYLE------>
-  <div class="form-inline align-items-center">
-    <label for="language" class="h5 m-2">Language</label>
-    <select class="form-control" id="language" onchange="changeLanguage();decrypt();" style="width:14rem;">
-      <option value="en">English</option>
-      <option value="fr">French</option>
-      <option value="de">German</option>
-      <option value="it">Italian</option>
-      <option value="pt">Portugese</option>
-      <option value="es">Spanish</option>
-      <option value="sv">Swedish</option>
-      <option value="custom" selected>Custom...</option>
-    </select>
-  </div>
-  <!------COUSTOM------>
-  <div id="alphabetWrapper" class="form-inline align-items-center collapse">
-    <label for="alphabet" class="h5 m-2">Alphabet</label>
-    <input class="form-control text-monospace" id="alphabet" type="text" style="width: 25em;" oninput="decrypt();" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ:/." placeholder="Enter alphabet here">
-  </div>
-  <!------HIDE------>
 </div>
+<!------RESULT------> 
+<form>
+<div class="form-group" >
+<center>
+<textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false" ></textarea>
+</center>
+<CENTER style="padding-top: 4.2px">
+    <input style="background-color:green; color:#ffffff;" type="button" id="save" onclick="Verify();" value="ENTER" />
+</CENTER>   
+</div>
+</form>  
+<!------HIDE------>   
+<div hidden>
+<!------CODE-TYPE------> 
+<div class="form-inline align-items-center">
+<label for="codeType" class="h5 m-2">Code Type</label>
+<select class="form-control" id="codeType" onchange="decrypt();" style="width:14rem;">
+<option value="a1z26" selected>A=1, B=2, C=3, ...</option>
+<option value="a0z25">A=0, B=1, C=2, ...</option>
+<option value="ascii">ASCII</option>
+<option value="hex">Hex ASCII</option>
+<option value="binary">Binary ASCII</option>
+<option value="tapcode">Tap Code / Knock Code</option>
+<option value="elements">Periodic Table (1=H, 2=He, ...)</option>
+</select>
+</div>
+<!------STYLE------>
+<div class="form-inline align-items-center">
+<label for="language" class="h5 m-2">Language</label>
+<select class="form-control" id="language" onchange="changeLanguage();decrypt();" style="width:14rem;">
+<option value="en" >English</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="it">Italian</option>
+<option value="pt">Portugese</option>
+<option value="es">Spanish</option>
+<option value="sv">Swedish</option>
+<option value="custom" selected>Custom...</option>
+</select>
+</div>
+<!------COUSTOM------>
+<div id="alphabetWrapper" class="form-inline align-items-center collapse">
+<label for="alphabet" class="h5 m-2">Alphabet</label>
+<input class="form-control text-monospace" id="alphabet" type="text" style="width: 25em;" oninput="decrypt();" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ:/." placeholder="Enter alphabet here">
+</div>
+<!------HIDE------> 
+</div>
+<!------END------>   
+</div>
+</div>
+</section>
+<!--DECODE-->
+<script>
+    function clearText() {
+        document.getElementById("srcText").value = '';
+        document.getElementById("dstText").value = '';
+    }
+
+    function decrypt() {
+        var src = document.getElementById("srcText").value;
+        var dst = '';
+        var codeType = document.getElementById("codeType").value;
+
+        switch (codeType) {
+            case 'a1z26':
+                dst = convertA1z26(src); break;
+            case 'a0z25':
+                dst = convertA0z25(src); break;
+            case 'ascii':
+                dst = convertAscii(src); break;
+            case 'hex':
+                dst = convertHex(src); break;
+            case 'binary':
+                dst = convertBinary(src); break;
+            case 'tapcode':
+                dst = convertTapcode(src); break;
+            case 'elements':
+                dst = convertElements(src); break;
+            default:
+                break;
+        }
+
+        document.getElementById("dstText").value = dst;
+    }
+
+    function convertA1z26(src) {
+        var matches = src.match(/\d+/g);
+        if (matches == null)
+            return document.getElementById("srcText").value;
+
+        var dst = '';  
+        var alphabet = getAlphabet();
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i]) - 1;
+            if (num >= 0 && num < alphabet.length)
+                dst += alphabet[num];
+          else
+          dst = document.getElementById("srcText").value;      
+        }
+
+        return dst;
+    }
+
+    function convertA0z25(src) {
+        var matches = src.match(/\d+/g);
+        if (matches == null)
+            return '';
+
+        var dst = '';
+        var alphabet = getAlphabet();
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i]);
+            if (num >= 0 && num < alphabet.length)
+                dst += alphabet[num];
+        }
+
+        return dst;
+    }
+
+    function convertAscii(src) {
+        var matches = src.match(/\d+/g);
+        if (matches == null)
+            return '';
+
+        var dst = '';
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i]);
+            if (num >= 0 && num <= 255)
+                dst += String.fromCharCode(num);
+        }
+
+        return dst;
+    }
+
+    function convertHex(src) {
+        var matches = src.match(/[\da-fA-F]{2}/g);
+        if (matches == null)
+            return '';
+
+        var dst = '';
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i], 16);
+            if (num >= 0 && num <= 255)
+                dst += String.fromCharCode(num);
+        }
+
+        return dst;
+    }
+
+    function convertBinary(src) {
+        var matches = src.replace(/[^01]+/g, '').match(/[01]{8}/g);
+        if (matches == null)
+            return '';
+
+        var dst = '';
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i], 2);
+            dst += String.fromCharCode(num);
+        }
+
+        return dst;
+    }
+
+    function convertTapcode(src) {
+        var matches = src.match(/\d/g);
+        if (matches == null)
+            return '';
+
+        var dst = '';
+        for (var i = 0; i < matches.length - 1; i += 2) {
+            var l1 = matches[i];
+            var l2 = matches[i + 1];
+            dst += posToLetter(parseInt(l1), parseInt(l2));
+        }
+
+        return dst;
+    }
+
+    function convertElements(src) {
+        var matches = src.match(/\d+/g);
+        if (matches == null)
+            return '';
+        var elements = ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr',
+            'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd',
+            'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu', 'Hf',
+            'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn', 'Fr', 'Ra', 'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm',
+            'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr', 'Rf', 'Db', 'Sg', 'Bh', 'Hs', 'Mt', 'Ds', 'Rg', 'Cn', 'Nh', 'Fl', 'Mc', 'Lv', 'Ts', 'Og']
+        var dst = '';
+        for (var i = 0; i < matches.length; i++) {
+            var num = parseInt(matches[i]) - 1;
+            if (num >= 0 && num <= elements.length)
+                dst += elements[num];
+        }
+
+        return dst;
+    }
+
+    function posToLetter(row, col) {
+        if (row < 1)
+            row = 1;
+        else if (row > 5)
+            row = 5;
+        if (col < 1)
+            col = 1;
+        else if (col > 5)
+            col = 5;
+        var pos = (row - 1) * 5 + col - 1;
+        return 'abcdefghijlmnopqrstuvwxyz'[pos];
+    }
+
+    function changeLanguage() {
+        var lang = document.getElementById('language').value;
+        if (lang === 'custom')
+            showElement('alphabetWrapper');
+        else
+            hideElement('alphabetWrapper');
+    }
+
+    function getAlphabet() {
+        var language = document.getElementById("language").value;
+        switch (language) {
+            case 'en':
+                return 'abcdefghijklmnopqrstuvwxyz';
+            case 'es':
+                return 'abcdefghijklmn&ntilde;opqrstuvwxyz';
+            case 'sv':
+                return 'abcdefghijklmnopqrstuvwxyz&aring;&auml;&ouml;';
+            case 'fr':
+                return 'abcdefghijklmnopqrstuvwxyz';
+            case 'de':
+                return 'abcdefghijklmnopqrstuvwxyz&auml;&ouml;&uuml;&szlig;';
+            case 'pt':
+                return 'abcdefghijklmnopqrstuvwxyz';
+            case 'it':
+                return 'abcdefghilmnopqrstuvz';
+            default:
+                var alphabet = document.getElementById("alphabet").value.toLowerCase();
+                if (alphabet.length === 0)
+                    alphabet = new Array(95).fill(0).map(function (_, i) { return String.fromCharCode(i + 32) }).join('');
+                return alphabet;
+        }
+    }
+
+    function showElement(id) {
+        document.getElementById(id).classList.remove('collapse');
+    }
+
+    function hideElement(id) {
+        document.getElementById(id).classList.add('collapse');
+    }
+</script>
 <!------END------>
+</main>
 <!------JavaScript------>
 <script src="main.js"></script>
 <!------SAVE-HTML------>
