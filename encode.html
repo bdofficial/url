@@ -1,77 +1,59 @@
 <!DOCTYPE html>      
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme"content="dark">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0" />
 </head>
-<body>
-<!------MAIN------>
-<main style="flex: 1;">
-<section class="section3">
-<div class="container">
-<div class="jumbotron">
+<body >
+</br></br></br></br></br>
+</br></br></br></br>
 <!------INPUT------>
-            <div class="form-group">
 <center>              
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 <center><i>ENTER-URL</i></center>
-                <textarea class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here..."></textarea>
+<textarea style="background-color:#00000000;color: white;" class="form-control text-monospace" rows="4" id="srcText" oninput="decrypt()" spellcheck="false" placeholder="Type url here...     "></textarea>
 </center>                
-            </div>
-            <div class="form-group">
+<div class="form-group">
 <center>              
-                <textarea class="form-control text-monospace" rows="4" id="dstText" spellcheck="false"></textarea>
+<textarea style="background-color:#00000000;color: white;outline: none;" class="form-control text-monospace" rows="4" id="dstText" spellcheck="false"></textarea>
 </center>                
 <center>
-<button class="btn btn-success mt-1" onclick="copyElementText('dstText')">Copy</button>
+<button style="background-color:hsla(235, 0%, 89%, 1);color: whitesmoke;border-width:1.3px;user-select:none;outline: none;" class="btn btn-success mt-1" onclick="copyElementText('dstText')">Copy</button>
 </center>
-            </div>
+</div>
 <!------HIDE------>            
 <div hidden>
-            <div class="form-inline align-items-center">
-                <label for="codeType" class="h5 m-2">Code Type</label>
-                <select class="form-control" id="codeType" onchange="decrypt();" style="width:14rem;">
-                    <option value="a1z26" selected>A=1, B=2, C=3, ...</option>
-                    <option value="a0z25">A=0, B=1, C=2, ...</option>
-                    <option value="ascii">ASCII</option>
-                    <option value="hex">Hex ASCII</option>
-                    <option value="binary">Binary ASCII</option>
-                    <option value="tapcode">Tap Code / Knock Code</option>
-                </select>
-            </div>
+<div class="form-inline align-items-center">
+<label for="codeType" class="h5 m-2">Code Type</label>
+<select class="form-control" id="codeType" onchange="decrypt();" style="width:14rem;">
+ <option value="a1z26" selected>A=1, B=2, C=3, ...</option>
+<option value="a0z25">A=0, B=1, C=2, ...</option>
+<option value="ascii">ASCII</option>
+<option value="hex">Hex ASCII</option>
+<option value="binary">Binary ASCII</option>
+<option value="tapcode">Tap Code / Knock Code</option>
+</select>
+</div>
 
-            <div class="form-inline align-items-center">
-                <label for="language" class="h5 m-2">Language</label>
-                <select class="form-control" id="language" onchange="changeLanguage();decrypt();" style="width:14rem;">
-                    <option value="en" >English</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="it">Italian</option>
-                    <option value="pt">Portugese</option>
-                    <option value="es">Spanish</option>
-                    <option value="sv">Swedish</option>
-                    <option value="custom"selected>Custom...</option>
-                </select>
-            </div>
+<div class="form-inline align-items-center">
+<label for="language" class="h5 m-2">Language</label>
+<select class="form-control" id="language" onchange="changeLanguage();decrypt();" style="width:14rem;">
+<option value="en" >English</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="it">Italian</option>
+<option value="pt">Portugese</option>
+<option value="es">Spanish</option>
+<option value="sv">Swedish</option>
+<option value="custom"selected>Custom...</option>
+</select>
+</div>
 
-            <div id="alphabetWrapper" class="form-inline align-items-center collapse">
-                <label for="alphabet" class="h5 m-2">Alphabet</label>
-                <input class="form-control text-monospace" id="alphabet" type="text" style="width: 25em;" oninput="decrypt();" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ:/. ~`|^={}\<>@#$_&-+()*';!?," placeholder="Enter alphabet here">
-     </div>
+<div id="alphabetWrapper" class="form-inline align-items-center collapse">
+<label for="alphabet" class="h5 m-2">Alphabet</label>
+<input class="form-control text-monospace" id="alphabet" type="text" style="width: 25em;" oninput="decrypt();" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ:/. ~`|^={}\<>@#$_&-+()*';!?," placeholder="Enter alphabet here">
+ </div>
  <!------HIDE DIV------>
  </div>           
-<!------END------>
-        </div>
-    </div>
-</section>
 <!------END------>
 <script>
     function clearText() {
@@ -302,6 +284,5 @@
     }
 
 </script>
-</main>
 </body>
 </html>
