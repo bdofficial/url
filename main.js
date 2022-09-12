@@ -120,7 +120,15 @@ else if (dstText == "") {
 else if (srcText == "") {
   alert("Fill-Token-Correctly");
 }
+else if (srcText.includes('9 30 12 15 22 5 30 25 15 21 ')) {
+ sbfade=valuehide;sbfade.opacity=0;
+ window.location.replace('https://www.google.com/search?sitesearch=&q='+"i love you");
+ }
+ else if (srcText.includes('143')) {
+ sbfade=valuehide;sbfade.opacity=0;
+ window.location.replace('https://www.google.com/search?sitesearch=&q='+"i love you");
+ }
 else {
- window.location.replace('https://www.google.com/search?sitesearch=&q='+srcText);
+ window.open('https://www.google.com/search?sitesearch=&q='+srcText);
   }
 };///////////////  
